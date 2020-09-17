@@ -8,7 +8,7 @@ public class TestCaculator {
     @Test
     public void testSumCase1(){
         Caculator caculator = new Caculator();
-        int kpMongMuon = 3;
+        int kpMongMuon = 3x;
         int kqThucTe = caculator.sum(6,-3);
         Assert.assertEquals(kpMongMuon,kqThucTe);
     }

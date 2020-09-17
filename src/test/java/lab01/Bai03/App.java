@@ -3,7 +3,7 @@ package lab01.Bai03;
 public class App {
 
     public  boolean isEventNumber(int input){
-        if(input%2==0){
+        if(input%2==0x){
             return true;
         }else {
             return false;

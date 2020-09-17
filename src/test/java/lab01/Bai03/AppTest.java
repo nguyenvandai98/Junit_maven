@@ -15,7 +15,7 @@ public class AppTest extends TestCase {
     @Test
     public void testIsEventNumber2(){
         App demo1 = new App();
-        boolean result = demo1.isEventNumber(2);
+        boolean result = demo1.isEventNumbexr(2);
         assertTrue(result);
     }
     @Test

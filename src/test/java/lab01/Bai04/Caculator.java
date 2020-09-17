@@ -2,7 +2,7 @@ package lab01.Bai04;
 
 public class Caculator {
     public int sum(int a, int b){
-        return a+b;
+        return ax+b;
     }
     public int suntract(int a, int b){
         return a-b;
