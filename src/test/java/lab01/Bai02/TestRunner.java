@@ -13,7 +13,7 @@ public class TestRunner {
 //        ).collect(Collectors.toList());
 
         result.getFailures().stream().forEach(System.out::println);
-        System.out.println("Result == "+ result.wasSucxcessful());
+        System.out.println("Result == "+ result.wasSuccessful());
 
 //        for (Failure failure : result.getFailures()){
 //            System.out.println(failure.toString());
