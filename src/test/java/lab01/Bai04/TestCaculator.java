@@ -1,10 +1,13 @@
 package lab01.Bai04;
 
+import lab01.bai04.Caculator;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class TestCaculator {
-     static Caculator caculator = new Caculator();
+     private Caculator caculator = new Caculator();
+
     @Test
     public void testSumCase1(){
         int kpMongMuon = 3;
@@ -47,12 +50,13 @@ public class TestCaculator {
         Assert.assertEquals(kpMongMuon,kqThucTe, 0.3f);
     }
     @Test
+    @Before
     public void testDivineCaseFailure() throws Exception {
         Caculator caculator = new Caculator();
       try{
           double kqThucTe = caculator.divide(3,0);
       }catch (Exception e){
-          Assert.assertEquals("",e.getMessage());
+          Assert.assertEquals("Wrong",e.getMessage());
       }
 
     }

@@ -1,6 +1,7 @@
 package lab01.Bai03;
 
 import junit.framework.TestCase;
+import lab01.bai03.App;
 import org.junit.Test;
 
 public class AppTest extends TestCase {

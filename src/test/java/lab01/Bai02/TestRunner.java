@@ -8,16 +8,7 @@ public class TestRunner {
     public static void main(String[] args) {
         Result result = JUnitCore.runClasses(TestJunit.class);
 
-//        List<String> list = result.getFailures().stream().map(failure ->
-//               failure.getMessage()
-//        ).collect(Collectors.toList());
-
         result.getFailures().stream().forEach(System.out::println);
         System.out.println("Result == "+ result.wasSuccessful());
-
-//        for (Failure failure : result.getFailures()){
-//            System.out.println(failure.toString());
-//        }
-
     }
 }

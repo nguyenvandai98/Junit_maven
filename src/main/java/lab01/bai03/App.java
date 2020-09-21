@@ -1,4 +1,4 @@
-package lab01.Bai03;
+package lab01.bai03;
 
 public class App {
 

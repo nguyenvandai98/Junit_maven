@@ -1,4 +1,4 @@
-package lab01.Bai04;
+package lab01.bai04;
 
 public class Caculator {
     public int sum(int a, int b){
