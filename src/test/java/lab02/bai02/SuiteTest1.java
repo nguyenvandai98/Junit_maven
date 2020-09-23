@@ -1,10 +1,9 @@
 package lab02.bai02;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import sun.misc.MessageUtils;
+
 
 public class SuiteTest1 {
     static   String message = "Fpoly";
