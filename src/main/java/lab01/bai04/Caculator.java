@@ -11,7 +11,8 @@ public class Caculator {
         return a*b;
     }
     public double divide(int a, int b) throws Exception {
-        if (b==0) throw new Exception("Wrong");
+        if (b==0)
+            throw new Exception("Wrong");
         return (double) a/b;
     }
 }

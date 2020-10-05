@@ -3,7 +3,9 @@ package lab01.Bai04;
 import lab01.bai04.Caculator;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 public class TestCaculator {
      private Caculator caculator = new Caculator();
@@ -49,15 +51,20 @@ public class TestCaculator {
         double kqThucTe = caculator.divide(3,2);
         Assert.assertEquals(kpMongMuon,kqThucTe, 0.3f);
     }
+
+    @Rule
+    public ExpectedException expectedException = ExpectedException.none();
     @Test
-    @Before
     public void testDivineCaseFailure() throws Exception {
         Caculator caculator = new Caculator();
-      try{
+//      try{
+        expectedException.expect(Exception.class);
+        expectedException.expectMessage("Wrong");
+
           double kqThucTe = caculator.divide(3,0);
-      }catch (Exception e){
-          Assert.assertEquals("Wrong",e.getMessage());
-      }
+//      }catch (Exception e){
+//          Assert.assertEquals("Wrong",e.getMessage());
+//      }
 
     }
 
